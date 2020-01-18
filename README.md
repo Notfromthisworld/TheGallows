@@ -1,3 +1,7 @@
+//GNU General Public License v3.0
+//The Gallows - Version 1.0 - December 31st, 2019 - DBT
+//More Additions to come in due time.
+
 The Ark
 
 The changes needed in saving oneself during a harsh period of time means that everyone must sacrifice what they have so they can live just a little bit longer. We are faced with such challenges and those who have families will do whatever they take to prevent anything happening and do others who have pets and etc etc etc.
