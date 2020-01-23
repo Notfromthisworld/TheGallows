@@ -1,5 +1,5 @@
 //GNU General Public License v3.0
-//The Gallows - Version 1.0 - December 31st, 2019 - DBT
+//The Gallows - Version 1.0 - December 31st, 2019 - Written By DBT
 //More Additions to come in due time.
 
 #include <algorithm>
