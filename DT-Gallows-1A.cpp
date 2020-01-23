@@ -95,7 +95,7 @@ int main(){                                                             //Start
 	srand (time(NULL));
 
 	WordsList = Get_File_Contents(WordsFile);
-	Words = SplitStringToVector(WordsList, "\n");
+	Words = SplitStringToVector(WordsList, "\r\n");
 
     SetPalette(Gallows::Palette1);
 
