@@ -1,5 +1,5 @@
 //GNU General Public License v3.0
-//The Gallows - Version 1.0 - December 31st, 2019 - Written By DBT
+//The Gallows - Version 1.0 - December 31st, 2019 - DBT
 //More Additions to come in due time.
 
 #include <algorithm>
@@ -126,10 +126,10 @@ int main(){                                                             //Start
 		std::cout << "======================================================================================\n\n";
 
 		//std::cout << "Your word has been chosen. The word is " << word.length() << " letters long!\n\n";             //Length of the word
-        std::cout << "My hat here contains " << Words.size() << " strips of magic paper. Each piece contains a hidden word.\n";
-        std::cout << "Please place your hand in the hat and grab one piece of magic paper.\n\n";
-        std::cout << "Your hand ruffles through the hat and you finally grab one.\n\n";
-        std::cout << "While you can not read the word, you can tell it has " << word.length() << " characters in it.\n";
+        std::cout << "|  My hat here contains " << Words.size() << " strips of magic paper. Each piece contains a hidden word.\n";
+        std::cout << "|  Please place your hand in the hat and grab one piece of magic paper.\n\n";
+        std::cout << "|  Your hand ruffles through the hat and you finally grab one.\n\n";
+        std::cout << "|  While you can not read the word, you can tell it has " << word.length() << " characters in it.\n";
 
 		while (WinOrLose == StillPlaying) {
 
@@ -138,7 +138,7 @@ int main(){                                                             //Start
 			std::cout << "\n\n";
 			Color(0, 8);
 
-			std::cout << "What letter, number, or character do you think is in the hidden word? ";
+			std::cout << "|  What letter, number, or character do you think is in the hidden word? ";
 			std::cin >> letter;
 
 			letter = toupper(letter);
@@ -161,7 +161,7 @@ int main(){                                                             //Start
 
 			} else if(LetterMatches > 0) {
 
-				std::cout << "YOU SPOKE THE CHARACTER \"" << letter << "\" AND THERE ";
+				std::cout << "|  YOU SPOKE THE CHARACTER \"" << letter << "\" AND THERE ";
 
 				if(LetterMatches == 1)
 				{
@@ -186,15 +186,15 @@ int main(){                                                             //Start
 
 		if(WinOrLose == Win)
 		{
-			std::cout << "\n\nYOU HAVE DONE WELL! NOW THAT YOU HAVE GUESSED MY SECRET WORD \"";     //When player wins
+			std::cout << "\n\n|  YOU HAVE DONE WELL! NOW THAT YOU HAVE GUESSED MY SECRET WORD \"";     //When player wins
 			EnhanceHiddenMessage(word);
 			Color(0, 8);
-			std::cout << "\",\nYOU SHALL LIVE ANOTHER DAY. YOU ARE FREE TO LEAVE THE GALLOWS THIS TIME, BUT YOU MAY\nNOT BE SO LUCKY IF YOU COME BACK AGAIN. NOW GO!\n\n";
+			std::cout << "\",\n|  YOU SHALL LIVE ANOTHER DAY. YOU ARE FREE TO LEAVE THE GALLOWS THIS TIME, BUT YOU MAY\n|  NOT BE SO LUCKY IF YOU COME BACK AGAIN. NOW GO!\n\n";
 		} else {
 
 			PrintExecutionMessage();
 
-			std::cout << "\n\nThe word to your freedom was: ";
+			std::cout << "\n\n|  The word to your freedom was: ";
 			EnhanceHiddenMessage(word);
 			Color(0,8);
 			std::cout << "\n";
@@ -202,7 +202,7 @@ int main(){                                                             //Start
 
 		do
 		{
-			std::cout << "\n\nWould you like to play again (Y / N)?: ";
+			std::cout << "\n\n|  Would you like to play again (Y / N)?: ";
 			std::cin >> letter;
 
 			letter = toupper(letter);
@@ -215,7 +215,7 @@ int main(){                                                             //Start
 
 	} while(Replay == true);
 
-	std::cout << "Thank you for playing!\nDon't come back now you hear!!!\n\n";
+	std::cout << "|  Thank you for playing!\n|  Don't come back now you hear!!!\n\n";
 
 	return 0;
 }
@@ -352,7 +352,7 @@ std::vector<std::string_view> SplitStringToVector(std::string_view StringToConve
 
 void PrintExecutionMessage()
 {
-    std::cout << "\n\nSorry, Walter! You lost and were hanged...pity\n\n";       //When player dies
+    std::cout << "\n\n|  Sorry, Walter! You lost and were hanged...pity\n\n";       //When player dies
 
     std::cout <<   "     -----------------------------------------------------------------\n";
     std::cout <<   "     |                                                               |\n";
