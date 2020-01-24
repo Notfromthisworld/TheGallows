@@ -86,7 +86,7 @@ int main(){                                                             //Start
 	std::string word;
 	std::string HiddenMessage;
 	std::string WordsList;
-	std::string WordsFile = "WordList2.txt";
+	std::string WordsFile = "WordList1.txt";
 	std::vector <std::string_view> Words;
     //std::vector <std::string> UserCharacterGuesses;
 
