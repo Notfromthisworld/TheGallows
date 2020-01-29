@@ -11,7 +11,7 @@ sumatranelephant
 sumatranorangutan
 sumatranrhinoceros
 westerngorilla
-westernlowlandorilla
+westernlowlandgorilla
 africanforestelephant
 africanpenguin
 africanwilddog
@@ -96,7 +96,7 @@ cassowary
 cheetah
 cloudedleopard
 crestedpenguin
-darwin'sfrog
+darwinsfrog
 dwarfcrocodile
 hippopotamus
 humboldtpenguin
@@ -230,6 +230,7 @@ wolverine
 woollymonkey
 yak
 zebrashark
+nearthreatened
 bongo
 gentoopenguin
 leopard
@@ -437,6 +438,7 @@ wrasse
 zebu
 common
 camel
+datadeficient
 duskydolphin
 hornshark
 orangutan
